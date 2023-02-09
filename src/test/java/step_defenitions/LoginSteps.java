@@ -9,7 +9,6 @@ import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginSteps {
-    WebDriver driver;
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
     @Given("user enters valid username and password")

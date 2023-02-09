@@ -19,8 +19,8 @@ public class LoginPage extends BasePage{
 
 
     public void enterValidLoginInfo(){
-        usernameBar.sendKeys("test1@gmail.com");
-        passwordBar.sendKeys("TestPass1234");
+        usernameBar.sendKeys("test123123@gmail.com");
+        passwordBar.sendKeys("Nn123123");
 
     }
     public void clickSignInBtn(){
