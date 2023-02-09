@@ -33,8 +33,8 @@ public class FirstFillOutFormPage extends BasePage{
         lastName.sendKeys("LastName");
         gender.click();
         dateOfBirth.sendKeys("04/29/1975");
-        sSN.sendKeys("999-88-7127");
-        emailAddress.sendKeys("test123123@gmail.com");
+        sSN.sendKeys("999-00-7127");
+        emailAddress.sendKeys("test123123123@gmail.com");
         password.sendKeys("Nn123123");
         confirmPassword.sendKeys("Nn123123");
     }

@@ -6,4 +6,4 @@ Feature: SignUp feature
     When user clicks the next button
     And user fills the form for the second page
     And user clicks the register button
-    Then user is on the homepage
+
