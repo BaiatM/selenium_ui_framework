@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage{
-    @FindBy (xpath = "//*[text()='Welcome Hailey']")
+    @FindBy (xpath = "//*[text()='Welcome FirstName']")
     WebElement welcomeText;
 
     public void verifyPage(){

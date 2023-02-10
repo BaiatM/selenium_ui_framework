@@ -1,6 +1,6 @@
 Feature: SignUp feature
-
-  Scenario: User is abl to sign up with fake credentials
+  @wip2
+  Scenario: User is able to sign up with fake credentials
     Given user clicks on sign up button
     And user fills the form
     When user clicks the next button
