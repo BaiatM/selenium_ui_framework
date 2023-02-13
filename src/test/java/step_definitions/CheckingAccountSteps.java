@@ -43,4 +43,12 @@ public class CheckingAccountSteps{
     public void user_should_see_the_confirmation_message() {
         newTab.verifyConfirmation();
     }
+    @When("user clicks on reset button")
+    public void user_clicks_on_reset_button() {
+        newTab.clickResetBtn();
+    }
+    @Then("user should see that information was cleared")
+    public void user_should_see_that_information_was_cleared() {
+        newTab.verifyEverythingIsBlank();
+    }
 }

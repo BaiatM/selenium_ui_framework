@@ -3,15 +3,24 @@ Feature: Creating a new checking account
     Given user enters valid username and password
     When user clicks on sign in button
     Then verify user is successfully logged in to the account
-@wip
-    Scenario: User is able to create a new checking account with valid credentials
-      Given user is clicking on Checking dropdown and seeing following options: View Checking, New Checking
-      And user is opening new tab by clicking on New Checking option
-      And user is changing to new checking tab
-      And user is able to see all related labels
-      When user fills the information for new checking account
-      And user clicks on submit button
-      Then user should see the confirmation message
+ @wip1
+  Scenario: User is able to create a new checking account with valid credentials
+    Given user is clicking on Checking dropdown and seeing following options: View Checking, New Checking
+    And user is opening new tab by clicking on New Checking option
+    And user is changing to new checking tab
+    And user is able to see all related labels
+    When user fills the information for new checking account
+    And user clicks on submit button
+    Then user should see the confirmation message
+  @wip2
+  Scenario: User is able to to reset filled information by clicking reset button
+    Given user is clicking on Checking dropdown and seeing following options: View Checking, New Checking
+    And user is opening new tab by clicking on New Checking option
+    And user is changing to new checking tab
+    And user is able to see all related labels
+    When user fills the information for new checking account
+    And user clicks on reset button
+    Then user should see that information was cleared
 
 
 

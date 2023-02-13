@@ -1,4 +1,9 @@
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/HomePage.java
+/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/CreateNewCheckingAccountPage.java
+/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/step_definitions/CheckingAccountSteps.java
+/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/BasePage.java
+/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/step_definitions/Hooks.java
+/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/SecondFillOutFormPage.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/SignUpPage.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/step_definitions/LoginSteps.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/FirstFillOutFormPage.java
@@ -6,6 +11,3 @@
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/runner/Runner.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/utils/DriverUtils.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/step_definitions/SignUpSteps.java
-/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/BasePage.java
-/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/step_definitions/Hooks.java
-/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/SecondFillOutFormPage.java

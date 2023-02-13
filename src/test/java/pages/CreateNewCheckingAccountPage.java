@@ -36,8 +36,10 @@ public class CreateNewCheckingAccountPage extends BasePage{
     WebElement initialDepositBar;
     @FindBy (css = "#newCheckingSubmit")
     WebElement submitBtn;
-    @FindBy (xpath = "//*[text()='Successfully created new Standard Checking account named Practice01']")
+    @FindBy (xpath = "//*[text()='Successfully created new Standard Checking account named Practice05']")
     WebElement confirmationMsg;
+    @FindBy (css = "#newCheckingReset")
+    WebElement resetBtn;
 
 
 
@@ -69,7 +71,7 @@ public class CreateNewCheckingAccountPage extends BasePage{
     public void userProvidesValidInformation(){
         standardCheckingRadio.click();
         individualRadio.click();
-        accountNameBar.sendKeys("Practice01");
+        accountNameBar.sendKeys("Practice05");
         initialDepositBar.sendKeys("200");
     }
 
@@ -79,5 +81,18 @@ public class CreateNewCheckingAccountPage extends BasePage{
 
     public void verifyConfirmation(){
         Assert.assertTrue("Creation of new Standard Checking account is failed",confirmationMsg.isDisplayed());
+    }
+
+    public void clickResetBtn(){
+        resetBtn.click();
+    }
+
+    public void verifyEverythingIsBlank(){
+        Assert.assertTrue(!standardCheckingRadio.isSelected());
+        Assert.assertTrue(!interestCheckingRadio.isSelected());
+        Assert.assertTrue(!individualRadio.isSelected());
+        Assert.assertTrue(!jointRadio.isSelected());
+        Assert.assertTrue(accountNameBar.getText().equals(""));
+        Assert.assertTrue(initialDepositBar.getText().equals(""));
     }
 }

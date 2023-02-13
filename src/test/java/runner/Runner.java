@@ -7,10 +7,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "step_definitions",
-        tags = "@wip",
+        tags = "@wip1 or @wip2",
         //plugin = {"html:html-report/report.html","json:target/cucumber.json"},
         dryRun = false
-
 )
 
 public class Runner {
