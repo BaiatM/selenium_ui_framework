@@ -1,5 +1,5 @@
 Feature: Login feature
-  @wip
+
   Scenario: Verify user is able to login with valid credentials
     Given user enters valid username and password
     When user clicks on sign in button
