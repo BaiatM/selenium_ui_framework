@@ -17,6 +17,13 @@ public class HomePage extends BasePage{
     WebElement viewCheckingOption;
     @FindBy (xpath = "//*[text()='New Checking']")
     WebElement newCheckingOption;
+    @FindBy (id="savings-menu")
+    WebElement savingsDropDown;
+    @FindBy (xpath="//*[text()='View Savings']")
+    WebElement viewSavingsOption;
+    @FindBy (xpath="//*[text()='New Savings']")
+    WebElement newSavingsOption;
+
 
 
     Actions actions = new Actions(DriverUtils.getDriver());
@@ -36,5 +43,15 @@ public class HomePage extends BasePage{
 
     public void openNewCheckingInNewTab(){
         actions.keyDown(Keys.COMMAND).click(newCheckingOption).keyUp(Keys.COMMAND).build().perform();
+    }
+    public void clickOnSavingsDropDown(){
+        savingsDropDown.click();
+    }
+    public void verifySavingsOptions(){
+        Assert.assertTrue(viewSavingsOption.isDisplayed());
+        Assert.assertTrue(newSavingsOption.isDisplayed());
+    }
+    public void clickOnNewSavingsOption(){
+        newSavingsOption.click();
     }
 }

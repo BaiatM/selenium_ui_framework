@@ -1,5 +1,6 @@
 package pages;
 
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -26,6 +27,7 @@ public class FirstFillOutFormPage extends BasePage{
     @FindBy (xpath = "//*[text()='Next']")
     WebElement nextBtn;
 
+    Faker faker = new Faker();
 
     public void fillTheFirstPageOfSignUp(){
         new Select(titleDropDown).selectByValue("Mr.");
@@ -33,8 +35,8 @@ public class FirstFillOutFormPage extends BasePage{
         lastName.sendKeys("LastName");
         gender.click();
         dateOfBirth.sendKeys("04/29/1975");
-        sSN.sendKeys("919-30-7917");
-        emailAddress.sendKeys("t12@gmail.com");
+        sSN.sendKeys(faker.idNumber().ssnValid());
+        emailAddress.sendKeys(faker.internet().safeEmailAddress());
         password.sendKeys("Nn123123");
         confirmPassword.sendKeys("Nn123123");
     }

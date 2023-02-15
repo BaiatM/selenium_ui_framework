@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.ConfigReader;
 
 public class LoginPage extends BasePage{
     @FindBy(id = "username")
@@ -18,9 +19,9 @@ public class LoginPage extends BasePage{
     WebElement signUpLink;
 
 
-    public void enterValidLoginInfo(){
-        usernameBar.sendKeys("test123123@gmail.com");
-        passwordBar.sendKeys("Nn123123");
+    public void enterValidLoginInfo(String str1,String str2){
+        usernameBar.sendKeys(ConfigReader.getProperty(str1));
+        passwordBar.sendKeys(ConfigReader.getProperty(str2));
 
     }
     public void clickSignInBtn(){

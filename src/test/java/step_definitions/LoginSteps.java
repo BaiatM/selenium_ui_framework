@@ -9,9 +9,9 @@ import pages.LoginPage;
 public class LoginSteps {
     HomePage homePage = new HomePage();
     LoginPage loginPage = new LoginPage();
-    @Given("user enters valid username and password")
-    public void user_enters_valid_username_and_password() {
-        loginPage.enterValidLoginInfo();
+    @Given("user enters valid {string} and {string}")
+    public void user_enters_valid_username_and_password(String str, String str1) {
+        loginPage.enterValidLoginInfo(str,str1);
     }
 
     @When("user clicks on sign in button")

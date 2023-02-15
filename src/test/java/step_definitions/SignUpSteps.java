@@ -16,7 +16,6 @@ public class SignUpSteps  {
     @Given("user fills the form")
     public void user_fills_the_form() {
         firstFillOutFormPage.fillTheFirstPageOfSignUp();
-
     }
 
     @When("user clicks the next button")
