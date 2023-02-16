@@ -14,6 +14,11 @@ public class Hooks {
     }
     @After
     public void cleanUp(Scenario scenario){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         DriverUtils.quitDriver(scenario);
     }
 }

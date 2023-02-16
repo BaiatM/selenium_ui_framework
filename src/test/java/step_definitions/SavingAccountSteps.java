@@ -53,4 +53,24 @@ public class SavingAccountSteps {
     public void userValidatesNewlyCreatedAccountInformation() {
         viewSavingsAccountsPage.verifyUserIsAbleToSeeNewlyCreatedAccount();
     }
+
+    @And("user clicks on View Savings option")
+    public void userClicksOnViewSavingsOption() {
+        homePage.userClicksOnViewSavingsOption();
+    }
+
+    @When("user scrolls down until the transaction table is visible")
+    public void userScrollsDownUntilTheTransactionTableIsVisible() {
+        viewSavingsAccountsPage.userScrollsDownToTransactionsTable();
+    }
+
+    @And("user should see all details about transactions")
+    public void userShouldSeeAllDetailsAboutTransactions() {
+        viewSavingsAccountsPage.userCanSeeTransactionDetails();
+    }
+
+    @And("user finds {string} and activates toggle button")
+    public void userFindsAndActivatesToggleButton(String targetAccount) {
+        viewSavingsAccountsPage.userFindsTargetAccountAndActivatesIt(targetAccount);
+    }
 }

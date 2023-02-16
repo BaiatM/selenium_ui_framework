@@ -14,6 +14,23 @@ Feature: Creating a new saving account
     And user is able to see confirmation letter on top
     Then user validates newly created account information
 
+  Scenario: User is able to see Transactions table with all details
+    Given user is able to see Savings dropdown and clicks on it
+    And user clicks on View Savings option
+    And user is redirected to view savings account page
+    When user scrolls down until the transaction table is visible
+    Then user should see all details about transactions
+
+  @wip
+  Scenario: User is able to check target account's transactions
+    Given user is able to see Savings dropdown and clicks on it
+    And user clicks on View Savings option
+    And user finds "savings.targetAccount" and activates toggle button
+    When user scrolls down until the transaction table is visible
+    Then user should see all details about transactions
+
+
+
 
 
     #### AllSavingsAccounts###

@@ -21,6 +21,8 @@ public class HomePage extends BasePage{
     WebElement savingsDropDown;
     @FindBy (id = "new-savings-menu-item")
     WebElement newSavingsOption;
+    @FindBy (id = "view-savings-menu-item")
+    WebElement viewSavingsOption;
 
 
 
@@ -50,5 +52,9 @@ public class HomePage extends BasePage{
 
     public void clickOnNewSavingsOption(){
         newSavingsOption.click();
+    }
+
+    public void userClicksOnViewSavingsOption(){
+        viewSavingsOption.click();
     }
 }
