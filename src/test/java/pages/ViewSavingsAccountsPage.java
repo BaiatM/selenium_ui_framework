@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.SourceType;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.How;
@@ -66,5 +67,13 @@ public class ViewSavingsAccountsPage extends BasePage{
                 listOfToggleBtns.get(i).click();
             }
         }
+    }
+
+    public void userVerifiesDepositAmountInTransactionsTable(String depositAmount){
+        Assert.assertTrue(transactionDetails.isDisplayed());
+        System.out.println(transactionDetails.getText());
+        Assert.assertTrue("Transactions table does not show deposit amount",
+                transactionDetails.getText().contains(ConfigReader.getProperty(depositAmount)));
+        System.out.println("SUCCESS!");
     }
 }

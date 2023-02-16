@@ -23,7 +23,8 @@ public class HomePage extends BasePage{
     WebElement newSavingsOption;
     @FindBy (id = "view-savings-menu-item")
     WebElement viewSavingsOption;
-
+    @FindBy (xpath ="//*[text()='Deposit']")
+    WebElement depositBtn;
 
 
     Actions actions = new Actions(DriverUtils.getDriver());
@@ -56,5 +57,9 @@ public class HomePage extends BasePage{
 
     public void userClicksOnViewSavingsOption(){
         viewSavingsOption.click();
+    }
+
+    public void userClicksOnDepositBtn(){
+        depositBtn.click();
     }
 }

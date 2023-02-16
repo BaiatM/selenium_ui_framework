@@ -21,7 +21,7 @@ Feature: Creating a new saving account
     When user scrolls down until the transaction table is visible
     Then user should see all details about transactions
 
-  @wip
+
   Scenario: User is able to check target account's transactions
     Given user is able to see Savings dropdown and clicks on it
     And user clicks on View Savings option
