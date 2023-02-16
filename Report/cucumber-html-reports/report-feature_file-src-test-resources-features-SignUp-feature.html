@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber Report Example</td>
               <td>1</td>
-            <td>13 Feb. 2023, 18:56</td>
+            <td>15 Feb. 2023, 22:07</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">SignUp feature</td>
-                    <td      class="passed"    >3</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+                    <td      class="passed"    >5</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="23684281000">23s 684ms</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="16273937000">16s 273ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">SignUp feature</span>
   
@@ -189,13 +189,13 @@ $(document).ready(function() {
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_wip2.html">@wip2</a>
+           <a href="report-tag_Smoke.html">@Smoke</a>
       </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">User is able to sign up with fake credentials</span>
   
@@ -206,7 +206,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -225,9 +225,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">step_definitions.Hooks.setUp()</span>
+                          <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">7s 034ms</span>
+  <span class="lead-duration duration">5s 851ms</span>
 
           </div>
 
@@ -243,9 +243,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -255,14 +255,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user clicks on sign up button</span>
   
-  <span class="lead-duration duration">1s 412ms</span>
+  <span class="lead-duration duration">1s 206ms</span>
 
   </div>
 
@@ -283,7 +283,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user fills the form</span>
   
-  <span class="lead-duration duration">1s 040ms</span>
+  <span class="lead-duration duration">7s 222ms</span>
 
   </div>
 
@@ -304,7 +304,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks the next button</span>
   
-  <span class="lead-duration duration">1s 148ms</span>
+  <span class="lead-duration duration">1s 267ms</span>
 
   </div>
 
@@ -321,58 +321,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">user fills the form for the second page</span>
   
-  <span class="lead-duration duration">20s 083ms</span>
+  <span class="lead-duration duration">5s 018ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=110.0.5481.77)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'Baiats-MacBook-Air.local', ip: 'fe80:0:0:0:104e:90b7:7ed2:9836%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.0.1', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0ef958a067e2b5622c340ad1f5a5a4be, sendKeysToElement {id=8db0baa7-09d0-4144-8647-fc2574798eae, value=[Ljava.lang.CharSequence;@e11ecfa}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: /var/folders/s4/yvdzpktx535...}, goog:chromeOptions: {debuggerAddress: localhost:51664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51664/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on MAC (0ef958a067e2b5622c340ad1f5a5a4be)] -&gt; xpath: //*[@id='address']]
-Session ID: 0ef958a067e2b5622c340ad1f5a5a4be
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
-	at pages.SecondFillOutFormPage.fillTheSecondSignUpPage(SecondFillOutFormPage.java:32)
-	at step_definitions.SignUpSteps.user_fills_the_form_for_the_second_page(SignUpSteps.java:29)
-	at &#10045;.user fills the form for the second page(file:///Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/resources/features/SignUp.feature:7)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -385,11 +342,11 @@ Session ID: 0ef958a067e2b5622c340ad1f5a5a4be
       </div>
           <div class="step">
         
-<div class="brief skipped">
+<div class="brief passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks the register button</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">1s 558ms</span>
 
   </div>
 
@@ -410,7 +367,7 @@ Session ID: 0ef958a067e2b5622c340ad1f5a5a4be
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -422,13 +379,13 @@ Session ID: 0ef958a067e2b5622c340ad1f5a5a4be
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">step_definitions.Hooks.cleanUp()</span>
+                          <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">3s 111ms</span>
+  <span class="lead-duration duration">549ms</span>
 
           </div>
 

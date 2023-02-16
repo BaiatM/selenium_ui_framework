@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import utils.DriverUtils;
 
 public class HomePage extends BasePage{
-    @FindBy (xpath = "//*[text()='Welcome FirstName']")
+    @FindBy (xpath = "//li[@class='active']")
     WebElement welcomeText;
     @FindBy (xpath = "//*[text()='Checking']")
     WebElement checkingDropDown;
@@ -17,11 +17,9 @@ public class HomePage extends BasePage{
     WebElement viewCheckingOption;
     @FindBy (xpath = "//*[text()='New Checking']")
     WebElement newCheckingOption;
-    @FindBy (id="savings-menu")
+    @FindBy (id = "savings-menu")
     WebElement savingsDropDown;
-    @FindBy (xpath="//*[text()='View Savings']")
-    WebElement viewSavingsOption;
-    @FindBy (xpath="//*[text()='New Savings']")
+    @FindBy (id = "new-savings-menu-item")
     WebElement newSavingsOption;
 
 
@@ -44,13 +42,12 @@ public class HomePage extends BasePage{
     public void openNewCheckingInNewTab(){
         actions.keyDown(Keys.COMMAND).click(newCheckingOption).keyUp(Keys.COMMAND).build().perform();
     }
-    public void clickOnSavingsDropDown(){
+
+    public void userClicksOnSavingsDropDown(){
+        Assert.assertTrue(savingsDropDown.isDisplayed());
         savingsDropDown.click();
     }
-    public void verifySavingsOptions(){
-        Assert.assertTrue(viewSavingsOption.isDisplayed());
-        Assert.assertTrue(newSavingsOption.isDisplayed());
-    }
+
     public void clickOnNewSavingsOption(){
         newSavingsOption.click();
     }
