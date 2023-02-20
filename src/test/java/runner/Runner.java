@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "step_definitions",
         tags = "@wip",
-        //plugin = {"html:html-report/report.html","json:target/cucumber.json"},
+        plugin = {"html:html-report/report.html","json:target/cucumber.json"},
         dryRun = false
 )
 

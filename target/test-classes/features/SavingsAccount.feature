@@ -32,14 +32,12 @@ Feature: Creating a new saving account
 
 
 
-
     #### AllSavingsAccounts###
     #
     ##>As a User,
     ##I want to have the ability to view all my Savings bank accounts
     ##so that I can manage my accounts and see account balance and transactions.
-    ##>
-    ##
+
     ##Functionalities:
     ##1. After User creates a new savings account, user should be able to view savings account information.
     ####All information should match the entered values during the submission of savings account.
@@ -49,6 +47,6 @@ Feature: Creating a new saving account
     ##- Display header "Description": Displays transaction id and type of Transaction
     ##- Display header "Amount": Displays the amount of made transaction
     ##- Display header "Balance": Displays balance amount, after each transaction
-    ##3. If User has more than 1 checking accounts, only one of the accounts can be Actived:
+    ##3. If User has more than 1 checking accounts, only one of the accounts can be Activated:
     ##- Display ON/OFF toggle button on each Savings account
     ##- Display transaction history for a particular checking account if it is Activated(ON)

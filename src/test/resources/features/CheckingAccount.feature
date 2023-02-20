@@ -24,6 +24,9 @@ Feature: Creating a new checking account
 
 
 
+
+
+
 ###PreferredCheckingAccount###
 # 1. Display Checking field under BANKING ACCOUNTS section,
 # clicking on 'Checking' dropdown should be displayed with following options: View Checking, New Checking

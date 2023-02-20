@@ -61,5 +61,7 @@ public class HomePage extends BasePage{
 
     public void userClicksOnDepositBtn(){
         depositBtn.click();
+        
     }
 }
+

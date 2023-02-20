@@ -1,5 +1,7 @@
 package pages;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -29,6 +31,7 @@ public class ViewSavingsAccountsPage extends BasePage{
     List<WebElement> listOfToggleBtns;
 
     JavascriptExecutor js = (JavascriptExecutor) DriverUtils.getDriver();
+    private static final Logger logger = LogManager.getLogger(ViewSavingsAccountsPage.class);
     public void verifyViewSavingsPage(){
         Assert.assertTrue(viewSavingsPageTitle.isDisplayed());
     }
@@ -74,6 +77,7 @@ public class ViewSavingsAccountsPage extends BasePage{
         System.out.println(transactionDetails.getText());
         Assert.assertTrue("Transactions table does not show deposit amount",
                 transactionDetails.getText().contains(ConfigReader.getProperty(depositAmount)));
-        System.out.println("SUCCESS!");
+        //System.out.println("SUCCESS!");
+        logger.info("SUCCESS");
     }
 }
