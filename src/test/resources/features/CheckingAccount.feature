@@ -1,8 +1,10 @@
 Feature: Creating a new checking account
+
   Background: User is logged in
     Given user enters valid "valid.username" and "valid.password"
     When user clicks on sign in button
     Then verify user is successfully logged in to the account
+
   @Smoke
   Scenario: User is able to create a new checking account with valid credentials
     Given user is clicking on Checking dropdown and seeing following options: View Checking, New Checking
@@ -12,6 +14,7 @@ Feature: Creating a new checking account
     When user fills the information for new checking account
     And user clicks on submit button
     Then user should see the confirmation message
+
   @Smoke
   Scenario: User is able to to reset filled information by clicking reset button
     Given user is clicking on Checking dropdown and seeing following options: View Checking, New Checking
@@ -22,9 +25,61 @@ Feature: Creating a new checking account
     And user clicks on reset button
     Then user should see that information was cleared
 
+  Scenario Outline: Transactions table validation
+    Given user is clicking on Checking dropdown and seeing following options: View Checking, New Checking
+    And user clicks on View Checking option
+    And user is on view checking accounts page
+    And user finds "<accountName>" checking account and activates toggle button
+    When user scrolls down until the transaction table is visible
+    Then user should see all details about transactions
+    Examples:
+      | accountName |
+      | Test02      |
+      | aa          |
+#      | Practice01  |
+#      | Practice02  |
+#      | Practice03  |
+#      | Practice04  |
+#      | Practice05  |
+#      | Practice06  |
+#      | Practice07  |
+#      | Practice08  |
+#      | Practice09  |
+#      | Practice10  |
+#      | Practice11  |
+#      | Practice12  |
+#      | Practice13  |
+#      | Practice14  |
 
-
-
+    #Feature: Validating all checking accounts page.
+    #  As a User, I want to have the ability to view all my Checking bank account
+    #  so that I can manage my accounts and see account balance and transactions.
+    #
+    #  Background:
+    #    Given user created an account and is on the "Checking Account" page
+    #
+    #  Scenario: Transactions table validation
+    #    Then user should see "Transactions" table
+    #    And user should see header "Date" and date and time when transaction happened
+    #    And user should see header "Category" with the type of transaction
+    #      | transaction       |
+    #      | Income            |
+    #      | Bills & Utilities |
+    #      | Food & Dinning    |
+    #      | Misc              |
+    #      | Education         |
+    #      | Gifts & Donations |
+    #      | Business Services |
+    #      | Health & Fitness  |
+    #    And user should see header "Description", transaction id and transaction merchant
+    #    And user should see header "Amount" and the amount of transaction
+    #    And user should see header "Balance" and the balance amount after each transaction
+    #
+    #  Scenario: Multiple Accounts - Active account
+    #    And user has more than one checking accounts
+    #    Then only one account should be active
+    #    And user should see transaction history for an active checking account
+    #    And "ON/OFF" toggle button should be present on each checking account
 
 
 ###PreferredCheckingAccount###

@@ -30,6 +30,7 @@ public class ViewSavingsAccountsPage extends BasePage{
     @FindBy (xpath = "//*[@class='card bg-flat-color-5 text-light']//label")
     List<WebElement> listOfToggleBtns;
 
+
     JavascriptExecutor js = (JavascriptExecutor) DriverUtils.getDriver();
     private static final Logger logger = LogManager.getLogger(ViewSavingsAccountsPage.class);
     public void verifyViewSavingsPage(){
@@ -64,12 +65,12 @@ public class ViewSavingsAccountsPage extends BasePage{
     }
 
     public void userFindsTargetAccountAndActivatesIt(String targetAccount){
-        for(int i=0;i<listOfAccounts.size();i++){
-            if(listOfAccounts.get(i).getText().contains(ConfigReader.getProperty(targetAccount))){
-                js.executeScript("arguments[0].scrollIntoView();", listOfAccounts.get(i));
-                listOfToggleBtns.get(i).click();
+            for(int i=0;i<listOfAccounts.size();i++){
+                if(listOfAccounts.get(i).getText().contains(ConfigReader.getProperty(targetAccount))){
+                    js.executeScript("arguments[0].scrollIntoView();", listOfAccounts.get(i));
+                    listOfToggleBtns.get(i).click();
+                }
             }
-        }
     }
 
     public void userVerifiesDepositAmountInTransactionsTable(String depositAmount){
