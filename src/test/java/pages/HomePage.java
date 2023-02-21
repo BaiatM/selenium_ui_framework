@@ -25,6 +25,8 @@ public class HomePage extends BasePage{
     WebElement viewSavingsOption;
     @FindBy (xpath ="//*[text()='Deposit']")
     WebElement depositBtn;
+    @FindBy (id="withdraw-menu-item")
+    WebElement withdrawOption;
 
 
     Actions actions = new Actions(DriverUtils.getDriver());
@@ -61,7 +63,10 @@ public class HomePage extends BasePage{
 
     public void userClicksOnDepositBtn(){
         depositBtn.click();
-        
+    }
+
+    public void userClicksOnWithdrawOption(){
+        withdrawOption.click();
     }
 }
 

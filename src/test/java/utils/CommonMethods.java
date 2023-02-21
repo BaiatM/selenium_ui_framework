@@ -18,8 +18,8 @@ public class CommonMethods {
     }
 
     public static void takeScreenshot(Scenario scenario) {
-        //We are surrounding the whole block in a try catch block in order to catch and print an error if the screenshot
-        //fails
+        //We are surrounding the whole block in a try catch block in order to catch and
+        //print an error if the screenshot fails
         try {
             //Here we are ensuring that the scenario has failed
             if (scenario.isFailed()) {

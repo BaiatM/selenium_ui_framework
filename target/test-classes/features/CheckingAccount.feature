@@ -36,20 +36,9 @@ Feature: Creating a new checking account
       | accountName |
       | Test02      |
       | aa          |
-#      | Practice01  |
-#      | Practice02  |
-#      | Practice03  |
-#      | Practice04  |
-#      | Practice05  |
-#      | Practice06  |
-#      | Practice07  |
-#      | Practice08  |
-#      | Practice09  |
-#      | Practice10  |
-#      | Practice11  |
-#      | Practice12  |
-#      | Practice13  |
-#      | Practice14  |
+      | Practice06  |
+      | Practice09  |
+      | Test00      |
 
     #Feature: Validating all checking accounts page.
     #  As a User, I want to have the ability to view all my Checking bank account
