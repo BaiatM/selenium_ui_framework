@@ -27,6 +27,9 @@ public class HomePage extends BasePage{
     WebElement depositBtn;
     @FindBy (id="withdraw-menu-item")
     WebElement withdrawOption;
+    @FindBy (xpath="//a[text()='Transfer Between Accounts']")
+    WebElement transferBetweenAccountsOption;
+
 
 
     Actions actions = new Actions(DriverUtils.getDriver());
@@ -67,6 +70,10 @@ public class HomePage extends BasePage{
 
     public void userClicksOnWithdrawOption(){
         withdrawOption.click();
+    }
+
+    public void userClicksOnTransferBetweenAccountsOption(){
+        transferBetweenAccountsOption.click();
     }
 }
 
