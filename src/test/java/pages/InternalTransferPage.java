@@ -18,6 +18,8 @@ public class InternalTransferPage extends BasePage{
     WebElement submitBtn;
     @FindBy (xpath="//small[@id='fromAccountBalance']")
     WebElement availableBalance;
+    @FindBy (xpath = "//*[text()='Error']")
+    WebElement errorMsg;
 
 
     double transferingAmount;
@@ -42,5 +44,9 @@ public class InternalTransferPage extends BasePage{
 
     public void userClicksSubmitBtn(){
         submitBtn.click();
+    }
+
+    public void verifyErrorMessage(){
+        Assert.assertTrue("The error message is not displayed", errorMsg.isDisplayed());
     }
 }

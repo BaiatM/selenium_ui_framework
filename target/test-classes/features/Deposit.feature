@@ -4,7 +4,7 @@ Feature: Deposit feature functionalities
     Given user enters valid "valid.username" and "valid.password"
     When user clicks on sign in button
     Then verify user is successfully logged in to the account
-  @wip
+  @Smoke
   Scenario: User is able to deposit and check if deposit was successful
     Given user clicks on Deposit option
     And user is redirected to Deposit page
@@ -13,8 +13,3 @@ Feature: Deposit feature functionalities
     And user is redirected to view savings account page
     And user scrolls down until the transaction table is visible
     Then user should see "deposit.amount" in transactions table
-
-
-  Scenario:
-
-  Scenario:

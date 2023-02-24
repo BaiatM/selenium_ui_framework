@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber Report Example</td>
               <td>1</td>
-            <td>17 Feb. 2023, 21:34</td>
+            <td>24 Feb. 2023, 15:46</td>
     </tr>
   </tbody>
 </table>
@@ -117,21 +117,21 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_file-src-test-resources-features-Deposit-feature.html">Deposit feature functionalities</a>
+      <a href="report-feature_file-src-test-resources-features-TransferBetweenAccounts-feature.html">User is able to transfer between accounts</a>
     </div>
   
   
 <div class="tags indention">
       <b>Tags:</b>
-           <a href="report-tag_wip.html">@wip</a>
+           <a href="report-tag_Smoke.html">@Smoke</a>
       </div>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">User is able to deposit and check if deposit was successful</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User is able to transfer between accounts</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -161,7 +161,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">14s 996ms</span>
+  <span class="lead-duration duration">6s 447ms</span>
 
           </div>
 
@@ -194,9 +194,72 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user clicks on Deposit option</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
   
-  <span class="lead-duration duration">8s 963ms</span>
+  <span class="lead-duration duration">1s 945ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
+  
+  <span class="lead-duration duration">818ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user chooses &quot;1287&quot; and &quot;3485&quot;</span>
+  
+  <span class="lead-duration duration">5s 221ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters transfer &quot;100.00&quot;</span>
+  
+  <span class="lead-duration duration">931ms</span>
 
   </div>
 
@@ -215,9 +278,9 @@ $(document).ready(function() {
         
 <div class="brief failed">
   <span class="keyword indention">And</span>
-  <span class="name">user is redirected to Deposit page</span>
+  <span class="name">user verifies that amount is less than available balance</span>
   
-  <span class="lead-duration duration">029ms</span>
+  <span class="lead-duration duration">529ms</span>
 
   </div>
 
@@ -229,14 +292,12 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
+        <pre>java.lang.AssertionError: Insufficient funds for the transfer
+	at org.junit.Assert.fail(Assert.java:89)
 	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertFalse(Assert.java:65)
-	at org.junit.Assert.assertFalse(Assert.java:75)
-	at pages.DepositPage.verifyDepositPage(DepositPage.java:20)
-	at step_definitions.DepositSteps.userIsRedirectedToDepositPage(DepositSteps.java:22)
-	at &#10045;.user is redirected to Deposit page(file:///Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/resources/features/Deposit.feature:10)
+	at pages.InternalTransferPage.verifyTransferAmountIsLessThanAvailableBalance(InternalTransferPage.java:42)
+	at step_definitions.TransferBetweenAccountsSteps.userVerifiesThatAmountIsLessThanAvailableBalance(TransferBetweenAccountsSteps.java:48)
+	at &#10045;.user verifies that amount is less than available balance(file:///Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/resources/features/TransferBetweenAccounts.feature:13)
 </pre>
       </div>
     </div>
@@ -255,7 +316,7 @@ $(document).ready(function() {
         
 <div class="brief skipped">
   <span class="keyword indention">When</span>
-  <span class="name">user chooses &quot;deposit.to&quot; account</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -276,28 +337,7 @@ $(document).ready(function() {
         
 <div class="brief skipped">
   <span class="keyword indention">And</span>
-  <span class="name">user enters &quot;deposit.amount&quot; and clicks on submit button</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user is redirected to view savings account page</span>
+  <span class="name">user is redirected to view checking accounts</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -339,7 +379,7 @@ $(document).ready(function() {
         
 <div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user should see &quot;deposit.amount&quot; in transactions table</span>
+  <span class="name">user verifies &quot;100.00&quot; in transaction table</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -380,7 +420,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">420ms</span>
+  <span class="lead-duration duration">2s 933ms</span>
 
           </div>
 
@@ -392,13 +432,351 @@ $(document).ready(function() {
                 <div class="embedding indention">
         <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-641975960.png" target="_blank">
+      <a href="embeddings/embedding_760785799.png" target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-6" class="collapse collapsable-details">
       <span class="embedding-content">
-        <img src="embeddings/embedding_-641975960.png">
+        <img src="embeddings/embedding_760785799.png">
+      </span>
+    </div>
+  </div>
+        </div>
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_file-src-test-resources-features-TransferBetweenAccounts-feature.html">User is able to transfer between accounts</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Smoke.html">@Smoke</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+    
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User is able to transfer between accounts</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-8" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">7s 603ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+    
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
+  
+  <span class="lead-duration duration">1s 536ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
+  
+  <span class="lead-duration duration">445ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user chooses &quot;1140&quot; and &quot;3485&quot;</span>
+  
+  <span class="lead-duration duration">3s 957ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters transfer &quot;20000.00&quot;</span>
+  
+  <span class="lead-duration duration">688ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">user verifies that amount is less than available balance</span>
+  
+  <span class="lead-duration duration">490ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Error message</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Insufficient funds for the transfer
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.InternalTransferPage.verifyTransferAmountIsLessThanAvailableBalance(InternalTransferPage.java:42)
+	at step_definitions.TransferBetweenAccountsSteps.userVerifiesThatAmountIsLessThanAvailableBalance(TransferBetweenAccountsSteps.java:48)
+	at &#10045;.user verifies that amount is less than available balance(file:///Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/resources/features/TransferBetweenAccounts.feature:13)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user is redirected to view checking accounts</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user scrolls down until the transaction table is visible</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user verifies &quot;20000.00&quot; in transaction table</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">1s 830ms</span>
+
+          </div>
+
+                      
+
+          
+          
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1881159909.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-12" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1881159909.png">
       </span>
     </div>
   </div>

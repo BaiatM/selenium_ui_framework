@@ -5,6 +5,7 @@ Feature: Withdraw from accounts
     When user clicks on sign in button
     Then verify user is successfully logged in to the account
 
+  @Smoke
   Scenario Outline: User is able to withdraw from any account
     Given user clicked on Withdraw option
     And user is redirected to withdraw page

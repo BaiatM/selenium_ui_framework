@@ -47,4 +47,9 @@ public class TransferBetweenAccountsSteps {
     public void userVerifiesThatAmountIsLessThanAvailableBalance() {
         internalTransferPage.verifyTransferAmountIsLessThanAvailableBalance();
     }
+
+    @Then("user should see an error popup")
+    public void userShouldSeeAnErrorPopup() {
+        internalTransferPage.verifyErrorMessage();
+    }
 }

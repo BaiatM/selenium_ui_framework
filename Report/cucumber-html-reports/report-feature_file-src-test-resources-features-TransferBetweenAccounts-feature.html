@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports (no 1) - Feature: Creating a new checking account</title>
+<title>Cucumber Reports (no 1) - Feature: User is able to transfer between accounts</title>
 
 </head>
 <body>
@@ -128,20 +128,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Creating a new checking account</td>
-                    <td      class="passed"    >65</td>
+          <td class="tagname">User is able to transfer between accounts</td>
+                    <td      class="passed"    >59</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >8</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">65</td>
+          <td class="total">69</td>
 
-          <td  class="passed"    >7</td>
-          <td >0</td>
-          <td class="total">7</td>
+          <td  class="passed"    >4</td>
+          <td  class="failed"    >2</td>
+          <td class="total">6</td>
 
-          <td class="duration" data-value="209635394000">3m 29s 635ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="91243150000">1m 31s 243ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,9 +173,9 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Creating a new checking account</span>
+  <span class="name">User is able to transfer between accounts</span>
   
 
   </div>
@@ -195,7 +195,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">User is logged in</span>
+  <span class="name">user us logged in</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -229,7 +229,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
   
-  <span class="lead-duration duration">1s 269ms</span>
+  <span class="lead-duration duration">1s 031ms</span>
 
   </div>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks on sign in button</span>
   
-  <span class="lead-duration duration">2s 953ms</span>
+  <span class="lead-duration duration">2s 872ms</span>
 
   </div>
 
@@ -271,7 +271,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">verify user is successfully logged in to the account</span>
   
-  <span class="lead-duration duration">510ms</span>
+  <span class="lead-duration duration">389ms</span>
 
   </div>
 
@@ -308,8 +308,8 @@ $(document).ready(function() {
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">User is able to create a new checking account with valid credentials</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User is able to transfer between accounts</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -339,7 +339,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">8s 189ms</span>
+  <span class="lead-duration duration">6s 586ms</span>
 
           </div>
 
@@ -372,9 +372,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user is clicking on Checking dropdown and seeing following options: View Checking, New Checking</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
   
-  <span class="lead-duration duration">1s 933ms</span>
+  <span class="lead-duration duration">1s 974ms</span>
 
   </div>
 
@@ -393,9 +393,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is opening new tab by clicking on New Checking option</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
   
-  <span class="lead-duration duration">1s 387ms</span>
+  <span class="lead-duration duration">438ms</span>
 
   </div>
 
@@ -414,9 +414,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is changing to new checking tab</span>
+  <span class="name">user chooses &quot;1140&quot; and &quot;1149&quot;</span>
   
-  <span class="lead-duration duration">825ms</span>
+  <span class="lead-duration duration">4s 005ms</span>
 
   </div>
 
@@ -435,9 +435,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is able to see all related labels</span>
+  <span class="name">user enters transfer &quot;47.50&quot;</span>
   
-  <span class="lead-duration duration">3s 854ms</span>
+  <span class="lead-duration duration">573ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user verifies that amount is less than available balance</span>
+  
+  <span class="lead-duration duration">368ms</span>
 
   </div>
 
@@ -456,9 +477,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user fills the information for new checking account</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
   
-  <span class="lead-duration duration">2s 120ms</span>
+  <span class="lead-duration duration">1s 883ms</span>
 
   </div>
 
@@ -477,9 +498,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user clicks on submit button</span>
+  <span class="name">user is redirected to view checking accounts</span>
   
-  <span class="lead-duration duration">1s 943ms</span>
+  <span class="lead-duration duration">435ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user scrolls down until the transaction table is visible</span>
+  
+  <span class="lead-duration duration">699ms</span>
 
   </div>
 
@@ -498,9 +540,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user should see the confirmation message</span>
+  <span class="name">user verifies &quot;47.50&quot; in transaction table</span>
   
-  <span class="lead-duration duration">396ms</span>
+  <span class="lead-duration duration">833ms</span>
 
   </div>
 
@@ -539,7 +581,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">628ms</span>
+  <span class="lead-duration duration">590ms</span>
 
           </div>
 
@@ -567,7 +609,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">User is logged in</span>
+  <span class="name">user us logged in</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -601,7 +643,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
   
-  <span class="lead-duration duration">1s 548ms</span>
+  <span class="lead-duration duration">1s 533ms</span>
 
   </div>
 
@@ -622,7 +664,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks on sign in button</span>
   
-  <span class="lead-duration duration">3s 028ms</span>
+  <span class="lead-duration duration">2s 866ms</span>
 
   </div>
 
@@ -643,7 +685,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">verify user is successfully logged in to the account</span>
   
-  <span class="lead-duration duration">759ms</span>
+  <span class="lead-duration duration">810ms</span>
 
   </div>
 
@@ -680,8 +722,8 @@ $(document).ready(function() {
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">User is able to to reset filled information by clicking reset button</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User is able to transfer between accounts</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -711,7 +753,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">6s 928ms</span>
+  <span class="lead-duration duration">7s 060ms</span>
 
           </div>
 
@@ -744,9 +786,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user is clicking on Checking dropdown and seeing following options: View Checking, New Checking</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
   
-  <span class="lead-duration duration">2s 457ms</span>
+  <span class="lead-duration duration">1s 543ms</span>
 
   </div>
 
@@ -765,9 +807,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is opening new tab by clicking on New Checking option</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
   
-  <span class="lead-duration duration">1s 638ms</span>
+  <span class="lead-duration duration">427ms</span>
 
   </div>
 
@@ -786,9 +828,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is changing to new checking tab</span>
+  <span class="name">user chooses &quot;1882&quot; and &quot;1140&quot;</span>
   
-  <span class="lead-duration duration">1s 294ms</span>
+  <span class="lead-duration duration">3s 154ms</span>
 
   </div>
 
@@ -807,9 +849,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is able to see all related labels</span>
+  <span class="name">user enters transfer &quot;27.85&quot;</span>
   
-  <span class="lead-duration duration">6s 918ms</span>
+  <span class="lead-duration duration">613ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user verifies that amount is less than available balance</span>
+  
+  <span class="lead-duration duration">382ms</span>
 
   </div>
 
@@ -828,9 +891,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user fills the information for new checking account</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
   
-  <span class="lead-duration duration">2s 619ms</span>
+  <span class="lead-duration duration">2s 075ms</span>
 
   </div>
 
@@ -849,9 +912,30 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user clicks on reset button</span>
+  <span class="name">user is redirected to view checking accounts</span>
   
-  <span class="lead-duration duration">840ms</span>
+  <span class="lead-duration duration">451ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user scrolls down until the transaction table is visible</span>
+  
+  <span class="lead-duration duration">807ms</span>
 
   </div>
 
@@ -870,9 +954,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user should see that information was cleared</span>
+  <span class="name">user verifies &quot;27.85&quot; in transaction table</span>
   
-  <span class="lead-duration duration">3s 302ms</span>
+  <span class="lead-duration duration">816ms</span>
 
   </div>
 
@@ -911,7 +995,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
                           <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">686ms</span>
+  <span class="lead-duration duration">479ms</span>
 
           </div>
 
@@ -939,7 +1023,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">User is logged in</span>
+  <span class="name">user us logged in</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -973,7 +1057,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
   
-  <span class="lead-duration duration">1s 638ms</span>
+  <span class="lead-duration duration">1s 928ms</span>
 
   </div>
 
@@ -994,7 +1078,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks on sign in button</span>
   
-  <span class="lead-duration duration">3s 110ms</span>
+  <span class="lead-duration duration">2s 977ms</span>
 
   </div>
 
@@ -1015,7 +1099,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">verify user is successfully logged in to the account</span>
   
-  <span class="lead-duration duration">883ms</span>
+  <span class="lead-duration duration">1s 023ms</span>
 
   </div>
 
@@ -1049,11 +1133,11 @@ $(document).ready(function() {
       </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Transactions table validation</span>
+  <span class="name">User is able to transfer between accounts</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1062,7 +1146,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-15" class="collapse collapsable-details ">
+  <div id="element-15" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
@@ -1083,7 +1167,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">7s 056ms</span>
+  <span class="lead-duration duration">6s 447ms</span>
 
           </div>
 
@@ -1099,9 +1183,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -1111,14 +1195,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details ">
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user is clicking on Checking dropdown and seeing following options: View Checking, New Checking</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
   
-  <span class="lead-duration duration">2s 763ms</span>
+  <span class="lead-duration duration">1s 945ms</span>
 
   </div>
 
@@ -1137,9 +1221,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user clicks on View Checking option</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
   
-  <span class="lead-duration duration">2s 150ms</span>
+  <span class="lead-duration duration">818ms</span>
 
   </div>
 
@@ -1158,9 +1242,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is on view checking accounts page</span>
+  <span class="name">user chooses &quot;1287&quot; and &quot;3485&quot;</span>
   
-  <span class="lead-duration duration">715ms</span>
+  <span class="lead-duration duration">5s 221ms</span>
 
   </div>
 
@@ -1179,9 +1263,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user finds &quot;Test02&quot; checking account and activates toggle button</span>
+  <span class="name">user enters transfer &quot;100.00&quot;</span>
   
-  <span class="lead-duration duration">23s 452ms</span>
+  <span class="lead-duration duration">931ms</span>
 
   </div>
 
@@ -1198,11 +1282,91 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">user verifies that amount is less than available balance</span>
+  
+  <span class="lead-duration duration">529ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Error message</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Insufficient funds for the transfer
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.InternalTransferPage.verifyTransferAmountIsLessThanAvailableBalance(InternalTransferPage.java:42)
+	at step_definitions.TransferBetweenAccountsSteps.userVerifiesThatAmountIsLessThanAvailableBalance(TransferBetweenAccountsSteps.java:48)
+	at &#10045;.user verifies that amount is less than available balance(file:///Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/resources/features/TransferBetweenAccounts.feature:13)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
   <span class="keyword indention">When</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user is redirected to view checking accounts</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
   <span class="name">user scrolls down until the transaction table is visible</span>
   
-  <span class="lead-duration duration">1s 327ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -1219,11 +1383,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user should see all details about transactions</span>
+  <span class="name">user verifies &quot;100.00&quot; in transaction table</span>
   
-  <span class="lead-duration duration">1s 115ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -1244,7 +1408,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1256,13 +1420,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-18" class="inner-level collapse collapsable-details ">
+    <div id="after-19" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">626ms</span>
+  <span class="lead-duration duration">2s 933ms</span>
 
           </div>
 
@@ -1270,6 +1434,21 @@ $(document).ready(function() {
 
           
           
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_760785799.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-20" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_760785799.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
         </div>
           </div>
@@ -1286,125 +1465,11 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-19">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name">User is logged in</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-19" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-20">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-20" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
-  
-  <span class="lead-duration duration">2s 046ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on sign in button</span>
-  
-  <span class="lead-duration duration">3s 118ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify user is successfully logged in to the account</span>
-  
-  <span class="lead-duration duration">773ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_Smoke.html">@Smoke</a>
-      </div>
-
-
     <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
     
 <div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Transactions table validation</span>
+  <span class="keyword indention">Background</span>
+  <span class="name">user us logged in</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1415,42 +1480,11 @@ $(document).ready(function() {
 
   <div id="element-21" class="collapse collapsable-details ">
     
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-22" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">7s 259ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1462,220 +1496,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-23" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is clicking on Checking dropdown and seeing following options: View Checking, New Checking</span>
-  
-  <span class="lead-duration duration">2s 066ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks on View Checking option</span>
-  
-  <span class="lead-duration duration">2s 039ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user is on view checking accounts page</span>
-  
-  <span class="lead-duration duration">807ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user finds &quot;aa&quot; checking account and activates toggle button</span>
-  
-  <span class="lead-duration duration">21s 499ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user scrolls down until the transaction table is visible</span>
-  
-  <span class="lead-duration duration">1s 336ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user should see all details about transactions</span>
-  
-  <span class="lead-duration duration">1s 189ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-24" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">650ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name">User is logged in</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-25" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-26">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-26" class="inner-level collapse collapsable-details ">
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
   
-  <span class="lead-duration duration">2s 267ms</span>
+  <span class="lead-duration duration">1s 227ms</span>
 
   </div>
 
@@ -1696,7 +1524,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks on sign in button</span>
   
-  <span class="lead-duration duration">3s 135ms</span>
+  <span class="lead-duration duration">2s 868ms</span>
 
   </div>
 
@@ -1717,7 +1545,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">verify user is successfully logged in to the account</span>
   
-  <span class="lead-duration duration">659ms</span>
+  <span class="lead-duration duration">537ms</span>
 
   </div>
 
@@ -1751,11 +1579,311 @@ $(document).ready(function() {
       </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Transactions table validation</span>
+  <span class="name">User is able to transfer between accounts</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+    
+  <div class="inner-level hooks-before">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-24">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="before-24" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+                          <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">6s 120ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  
+        </div>
+          </div>
+  </div>
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
+  
+  <span class="lead-duration duration">1s 713ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
+  
+  <span class="lead-duration duration">403ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user chooses &quot;1924&quot; and &quot;2275&quot;</span>
+  
+  <span class="lead-duration duration">3s 180ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters transfer &quot;70.25&quot;</span>
+  
+  <span class="lead-duration duration">509ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user verifies that amount is less than available balance</span>
+  
+  <span class="lead-duration duration">920ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
+  
+  <span class="lead-duration duration">1s 842ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user is redirected to view checking accounts</span>
+  
+  <span class="lead-duration duration">384ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user scrolls down until the transaction table is visible</span>
+  
+  <span class="lead-duration duration">1s 357ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user verifies &quot;70.25&quot; in transaction table</span>
+  
+  <span class="lead-duration duration">800ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+  <div class="inner-level hooks-after">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-26">
+      
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+    </div>
+
+    <div id="after-26" class="inner-level collapse collapsable-details ">
+              <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+                          <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
+                        
+  <span class="lead-duration duration">393ms</span>
+
+          </div>
+
+                      
+
+          
+          
+  
+        </div>
+          </div>
+  </div>
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name">user us logged in</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -1766,42 +1894,11 @@ $(document).ready(function() {
 
   <div id="element-27" class="collapse collapsable-details ">
     
-  <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-28">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="before-28" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-                          <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">7s 369ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1813,220 +1910,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-29" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user is clicking on Checking dropdown and seeing following options: View Checking, New Checking</span>
-  
-  <span class="lead-duration duration">2s 144ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks on View Checking option</span>
-  
-  <span class="lead-duration duration">2s 283ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user is on view checking accounts page</span>
-  
-  <span class="lead-duration duration">641ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user finds &quot;Practice06&quot; checking account and activates toggle button</span>
-  
-  <span class="lead-duration duration">22s 354ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user scrolls down until the transaction table is visible</span>
-  
-  <span class="lead-duration duration">1s 240ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user should see all details about transactions</span>
-  
-  <span class="lead-duration duration">1s 888ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-  <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
-      
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-    </div>
-
-    <div id="after-30" class="inner-level collapse collapsable-details ">
-              <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-                          <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
-                        
-  <span class="lead-duration duration">645ms</span>
-
-          </div>
-
-                      
-
-          
-          
-  
-        </div>
-          </div>
-  </div>
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name">User is logged in</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-31" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-32">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-32" class="inner-level collapse collapsable-details ">
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
   
-  <span class="lead-duration duration">1s 636ms</span>
+  <span class="lead-duration duration">1s 226ms</span>
 
   </div>
 
@@ -2047,7 +1938,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks on sign in button</span>
   
-  <span class="lead-duration duration">2s 970ms</span>
+  <span class="lead-duration duration">2s 973ms</span>
 
   </div>
 
@@ -2068,7 +1959,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">verify user is successfully logged in to the account</span>
   
-  <span class="lead-duration duration">889ms</span>
+  <span class="lead-duration duration">509ms</span>
 
   </div>
 
@@ -2102,11 +1993,11 @@ $(document).ready(function() {
       </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-29">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Transactions table validation</span>
+  <span class="name">User is able to transfer between accounts</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2115,10 +2006,10 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-33" class="collapse collapsable-details ">
+  <div id="element-29" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-34">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-30">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2130,13 +2021,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-34" class="inner-level collapse collapsable-details ">
+    <div id="before-30" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">6s 524ms</span>
+  <span class="lead-duration duration">7s 603ms</span>
 
           </div>
 
@@ -2152,9 +2043,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-35">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-31">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -2164,14 +2055,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-35" class="inner-level collapse collapsable-details ">
+  <div id="steps-31" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user is clicking on Checking dropdown and seeing following options: View Checking, New Checking</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
   
-  <span class="lead-duration duration">2s 324ms</span>
+  <span class="lead-duration duration">1s 536ms</span>
 
   </div>
 
@@ -2190,9 +2081,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user clicks on View Checking option</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
   
-  <span class="lead-duration duration">1s 860ms</span>
+  <span class="lead-duration duration">445ms</span>
 
   </div>
 
@@ -2211,9 +2102,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is on view checking accounts page</span>
+  <span class="name">user chooses &quot;1140&quot; and &quot;3485&quot;</span>
   
-  <span class="lead-duration duration">760ms</span>
+  <span class="lead-duration duration">3s 957ms</span>
 
   </div>
 
@@ -2232,9 +2123,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user finds &quot;Practice09&quot; checking account and activates toggle button</span>
+  <span class="name">user enters transfer &quot;20000.00&quot;</span>
   
-  <span class="lead-duration duration">19s 822ms</span>
+  <span class="lead-duration duration">688ms</span>
 
   </div>
 
@@ -2251,11 +2142,91 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">user verifies that amount is less than available balance</span>
+  
+  <span class="lead-duration duration">490ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Error message</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: Insufficient funds for the transfer
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at pages.InternalTransferPage.verifyTransferAmountIsLessThanAvailableBalance(InternalTransferPage.java:42)
+	at step_definitions.TransferBetweenAccountsSteps.userVerifiesThatAmountIsLessThanAvailableBalance(TransferBetweenAccountsSteps.java:48)
+	at &#10045;.user verifies that amount is less than available balance(file:///Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/resources/features/TransferBetweenAccounts.feature:13)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
   <span class="keyword indention">When</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">user is redirected to view checking accounts</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">And</span>
   <span class="name">user scrolls down until the transaction table is visible</span>
   
-  <span class="lead-duration duration">1s 167ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -2272,11 +2243,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief passed">
+<div class="brief skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user should see all details about transactions</span>
+  <span class="name">user verifies &quot;20000.00&quot; in transaction table</span>
   
-  <span class="lead-duration duration">1s 391ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -2297,7 +2268,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-36">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-33">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2309,13 +2280,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-36" class="inner-level collapse collapsable-details ">
+    <div id="after-33" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">655ms</span>
+  <span class="lead-duration duration">1s 830ms</span>
 
           </div>
 
@@ -2323,6 +2294,21 @@ $(document).ready(function() {
 
           
           
+    <div class="embeddings inner-level">
+                <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-34" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1881159909.png" target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-34" class="collapse collapsable-details">
+      <span class="embedding-content">
+        <img src="embeddings/embedding_-1881159909.png">
+      </span>
+    </div>
+  </div>
+        </div>
   
         </div>
           </div>
@@ -2339,11 +2325,125 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
     
 <div class="brief passed">
   <span class="keyword indention">Background</span>
-  <span class="name">User is logged in</span>
+  <span class="name">user us logged in</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
+  
+  <span class="lead-duration duration">1s 633ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on sign in button</span>
+  
+  <span class="lead-duration duration">3s 103ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify user is successfully logged in to the account</span>
+  
+  <span class="lead-duration duration">727ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_Smoke.html">@Smoke</a>
+      </div>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">User is not available to transfer more than available balance</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -2354,122 +2454,8 @@ $(document).ready(function() {
 
   <div id="element-37" class="collapse collapsable-details ">
     
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-38" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">user enters valid &quot;valid.username&quot; and &quot;valid.password&quot;</span>
-  
-  <span class="lead-duration duration">1s 266ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">When</span>
-  <span class="name">user clicks on sign in button</span>
-  
-  <span class="lead-duration duration">3s 973ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">verify user is successfully logged in to the account</span>
-  
-  <span class="lead-duration duration">401ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
-  
-  
-<div class="tags indention">
-      <b>Tags:</b>
-           <a href="report-tag_Smoke.html">@Smoke</a>
-      </div>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-39">
-    
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Transactions table validation</span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-39" class="collapse collapsable-details ">
-    
   <div class="inner-level hooks-before">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-40">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2481,13 +2467,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-40" class="inner-level collapse collapsable-details ">
+    <div id="before-38" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
                           <span class="location name">step_definitions.Hooks.setUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">7s 119ms</span>
+  <span class="lead-duration duration">7s 215ms</span>
 
           </div>
 
@@ -2503,7 +2489,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-41">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2515,14 +2501,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-41" class="inner-level collapse collapsable-details ">
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user is clicking on Checking dropdown and seeing following options: View Checking, New Checking</span>
+  <span class="name">user clicks on Transfer Between Accounts option</span>
   
-  <span class="lead-duration duration">1s 612ms</span>
+  <span class="lead-duration duration">1s 760ms</span>
 
   </div>
 
@@ -2541,9 +2527,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user clicks on View Checking option</span>
+  <span class="name">user is redirected to Internal Transfer page</span>
   
-  <span class="lead-duration duration">1s 772ms</span>
+  <span class="lead-duration duration">758ms</span>
 
   </div>
 
@@ -2562,9 +2548,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user is on view checking accounts page</span>
+  <span class="name">user chooses &quot;1140&quot; and &quot;1149&quot;</span>
   
-  <span class="lead-duration duration">472ms</span>
+  <span class="lead-duration duration">6s 247ms</span>
 
   </div>
 
@@ -2583,9 +2569,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user finds &quot;Test00&quot; checking account and activates toggle button</span>
+  <span class="name">user enters transfer &quot;12345&quot;</span>
   
-  <span class="lead-duration duration">15s 154ms</span>
+  <span class="lead-duration duration">717ms</span>
 
   </div>
 
@@ -2604,9 +2590,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user scrolls down until the transaction table is visible</span>
+  <span class="name">user clicks on submit button on Internal Transfer page</span>
   
-  <span class="lead-duration duration">715ms</span>
+  <span class="lead-duration duration">1s 690ms</span>
 
   </div>
 
@@ -2625,9 +2611,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user should see all details about transactions</span>
+  <span class="name">user should see an error popup</span>
   
-  <span class="lead-duration duration">1s 189ms</span>
+  <span class="lead-duration duration">663ms</span>
 
   </div>
 
@@ -2648,7 +2634,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-42">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2660,13 +2646,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-42" class="inner-level collapse collapsable-details ">
+    <div id="after-40" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">409ms</span>
+  <span class="lead-duration duration">818ms</span>
 
           </div>
 
