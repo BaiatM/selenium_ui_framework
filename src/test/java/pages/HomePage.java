@@ -29,7 +29,14 @@ public class HomePage extends BasePage{
     WebElement withdrawOption;
     @FindBy (xpath="//a[text()='Transfer Between Accounts']")
     WebElement transferBetweenAccountsOption;
+    @FindBy (xpath ="//i[@class='ti-email']")
+    WebElement emailIcon;
+    @FindBy (xpath = "//span[@class='count bg-primary']")
+    WebElement numberOfNewMails;
+    @FindBy (xpath = "//div[3]//p[@style='width: max-content']")
+    WebElement textOfNewMails;
 
+    String newMessages;
 
 
     Actions actions = new Actions(DriverUtils.getDriver());
@@ -74,6 +81,20 @@ public class HomePage extends BasePage{
 
     public void userClicksOnTransferBetweenAccountsOption(){
         transferBetweenAccountsOption.click();
+    }
+
+    public void clickOnEmailIcon(){
+        emailIcon.click();
+    }
+
+    public void numberOfMessagesAreVisible(){
+        Assert.assertTrue(numberOfNewMails.isDisplayed());
+        newMessages = numberOfNewMails.getText();
+    }
+
+    public void verifyTextOfNewMails(){
+        Assert.assertTrue("The number of new messages does not match with actual number of new emails",
+                textOfNewMails.getText().contains(newMessages));
     }
 }
 
