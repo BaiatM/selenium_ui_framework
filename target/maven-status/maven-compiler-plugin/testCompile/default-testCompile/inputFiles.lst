@@ -24,4 +24,5 @@
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/FirstFillOutFormPage.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/runner/Runner.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/step_definitions/SavingAccountSteps.java
+/Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/step_definitions/MessageSteps.java
 /Users/baiatmakeshov/Desktop/FFS/selenium-ui-framework/src/test/java/pages/ViewSavingsAccountsPage.java

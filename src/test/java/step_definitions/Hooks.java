@@ -5,12 +5,16 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import utils.CommonMethods;
 import utils.ConfigReader;
+import utils.DatabaseUtils;
 import utils.DriverUtils;
+
+import javax.xml.crypto.Data;
 
 public class Hooks {
     @Before
     public void setUp(Scenario scenario){
         ConfigReader.initializeProperties();
+        DatabaseUtils.initializeDBProperties();
         DriverUtils.createDriver(scenario);
     }
     @After
@@ -29,7 +33,7 @@ public class Hooks {
             scenario.attach(CommonMethods.takeScreenshot(),"image/png",scenario.getName());
         }
         CommonMethods.takeScreenshot(scenario);
-
+        DatabaseUtils.closeDataBaseConnection();
         DriverUtils.quitDriver(scenario);
     }
 }
