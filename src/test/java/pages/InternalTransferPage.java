@@ -4,6 +4,11 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import utils.ConfigReader;
+import utils.DatabaseUtils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class InternalTransferPage extends BasePage{
     @FindBy(xpath = "//h1[@id='page-title']")
@@ -48,5 +53,32 @@ public class InternalTransferPage extends BasePage{
 
     public void verifyErrorMessage(){
         Assert.assertTrue("The error message is not displayed", errorMsg.isDisplayed());
+    }
+
+    public void userChoosesFromAccountAndToAccountSQLPractice(){
+        new Select(fromAccountDropDown).selectByValue("1140");
+        new Select(toAccountDropDown).selectByValue("1146");
+    }
+
+    public void userEntersTransferAmountSQLPractice(){
+        transferAmountBar.sendKeys("13.85");
+    }
+
+    public void userVerifiesTransferAmountWithActualDatabaseSQLPractice(){
+        String data="";
+        String msg = "The data is not matching!";
+        try {
+            ResultSet rs = DatabaseUtils.executeQuery("SELECT * FROM account_transaction ORDER BY transaction_date desc limit 1;");
+            while(rs.next()){
+                data =rs.getString(2);
+                System.out.println(rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4));
+            }
+//            String actual = rs.getString(2);
+//            String expected = "13.85";
+//            Assert.assertEquals(msg,expected,actual);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Assert.assertTrue(msg,data.contains("13.85"));
     }
 }

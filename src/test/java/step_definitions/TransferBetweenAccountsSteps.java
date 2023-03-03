@@ -7,6 +7,10 @@ import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.InternalTransferPage;
 import pages.ViewCheckingAccountsPage;
+import utils.DatabaseUtils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class TransferBetweenAccountsSteps {
 
@@ -51,5 +55,21 @@ public class TransferBetweenAccountsSteps {
     @Then("user should see an error popup")
     public void userShouldSeeAnErrorPopup() {
         internalTransferPage.verifyErrorMessage();
+    }
+
+    @And("user selects from account and to account in internal page")
+    public void userSelectsFromAccountInInternalPage() {
+        internalTransferPage.userChoosesFromAccountAndToAccountSQLPractice();
+    }
+
+    @Then("verify transaction details are updated in actual database")
+    public void verifyTransactionDetailsAreUpdatedInActualDatabase() {
+       internalTransferPage.userVerifiesTransferAmountWithActualDatabaseSQLPractice();
+
+    }
+
+    @And("user enters transfer amount")
+    public void userEntersTransferAmount() {
+        internalTransferPage.userEntersTransferAmountSQLPractice();
     }
 }

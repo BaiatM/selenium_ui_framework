@@ -20,7 +20,7 @@ public class LoginPage extends BasePage{
 
 
     public void enterValidLoginInfo(String str1,String str2){
-        usernameBar.sendKeys(ConfigReader.getProperty(str1));
+        usernameBar.sendKeys(ConfigReader.getProperty(str1)); // ConfigReader.getProperty("valid.password")
         passwordBar.sendKeys(ConfigReader.getProperty(str2));
 
     }

@@ -19,6 +19,7 @@ public class Hooks {
     }
     @After
     public void cleanUp(Scenario scenario){
+        DatabaseUtils.closeDataBaseConnection();
         try {
             Thread.sleep(3500);
         } catch (InterruptedException e) {
@@ -33,7 +34,6 @@ public class Hooks {
             scenario.attach(CommonMethods.takeScreenshot(),"image/png",scenario.getName());
         }
         CommonMethods.takeScreenshot(scenario);
-        DatabaseUtils.closeDataBaseConnection();
         DriverUtils.quitDriver(scenario);
     }
 }
