@@ -14,12 +14,10 @@ public class Hooks {
     @Before
     public void setUp(Scenario scenario){
         ConfigReader.initializeProperties();
-        DatabaseUtils.initializeDBProperties();
         DriverUtils.createDriver(scenario);
     }
     @After
     public void cleanUp(Scenario scenario){
-        DatabaseUtils.closeDataBaseConnection();
         try {
             Thread.sleep(3500);
         } catch (InterruptedException e) {
@@ -36,4 +34,13 @@ public class Hooks {
         CommonMethods.takeScreenshot(scenario);
         DriverUtils.quitDriver(scenario);
     }
+    @Before("@DB")
+    public void setUpDB(){
+        DatabaseUtils.initializeDBProperties();
+    }
+    @After("@DB")
+    public void cleanUpDB(){
+        DatabaseUtils.closeDataBaseConnection();
+    }
+
 }

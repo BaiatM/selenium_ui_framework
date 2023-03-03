@@ -67,4 +67,9 @@ public class CheckingAccountSteps{
     public void userFindsCheckingAccountAndActivatesToggleButton(String accountName) {
         viewCheckingAccountsPage.userFindsAccountAndActivatesToggleBtn(accountName);
     }
+
+    @When("user fills the information for new checking account with the name {string}")
+    public void userFillsTheInformationForNewCheckingAccountWithTheName(String name) {
+        newTab.userProvidesValidInformation(name);
+    }
 }

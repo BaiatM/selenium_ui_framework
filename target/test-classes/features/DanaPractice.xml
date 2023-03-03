@@ -1,0 +1,166 @@
+
+
+
+<!--              ##Create-->
+
+<!--  #Test -> that a new account can be created with valid information (account type, ownership type, account name, initial deposit amount)-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the account creation page (checking or saving account)-->
+<!--  #Create a new account-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+
+<!--  #Test -> that account cannot be created with missing or invalid information (missing account name, missing account type and etc)-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the account creation page (checking or saving account)-->
+<!--  #Create a new account (leave empty one field-->
+<!--  #Validate that an error message is present-->
+<!--  #Go to DB and check if an account has NOT been saved (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+
+<!--            ##Update-->
+
+<!--  #Test -> that an accounts balance can be updated with a valid deposit-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the account creation page (checking or saving account)-->
+<!--  #Create a new account-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Deposit page and deposit a valid amount to the new account-->
+<!--  #Go to DB and check if a deposit has been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that an accounts balance cannot be updated with an invalid deposit (negative, input format wrong)-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the account creation page (checking or saving account)-->
+<!--  #Create a new account-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Deposit page and deposit an invalid input to the new account-->
+<!--  #Validate that an error message is present-->
+<!--  #Go to DB and check if a deposit has NOT been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that an accounts balance can be updated with a valid withdrawal-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the account creation page (checking or saving account)-->
+<!--  #Create a new account-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Withdraw page and withdraw a valid amount from the new account-->
+<!--  #Go to DB and check if a withdrawal has been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that an accounts balance cannot be updated with an invalid withdrawal (withdrawal amount is higher than the current balance, input format wrong)-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the account creation page (checking or saving account)-->
+<!--  #Create a new account-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Withdraw page and withdraw an invalid amount from the new account-->
+<!--  #Validate that an error message is present-->
+<!--  #Go to DB and check if a withdrawal has NOT been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+
+<!--              #Functional testing-->
+
+<!--  #Test -> that transfer between two checking accounts is saved in DB-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the checking account creation page-->
+<!--  #Create two new accounts-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Transfer page-->
+<!--  #Make a transfer with a valid amount from account1 to account2-->
+<!--  #Go to DB and check if a transfer has been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that transfer between two savings accounts is saved in DB-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the savings account creation page-->
+<!--  #Create two new accounts-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Transfer page-->
+<!--  #Make a transfer with a valid amount from account1 to account2-->
+<!--  #Go to DB and check if a transfer has been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that transfer between two accounts is saved in DB (from checking to savings and vice versa)-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the savings account creation page-->
+<!--  #Create two new accounts (one checking and one saving)-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Transfer page-->
+<!--  #Make a transfer with a valid amount from account1 to account2-->
+<!--  #Go to DB and check if a transfer has been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that INVALID transfer between two checking accounts is NOT saved in DB-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the checking account creation page-->
+<!--  #Create two new accounts-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Transfer page-->
+<!--  #Make a transfer with an invalid amount from account1 to account2-->
+<!--  #Go to DB and check if a transfer has NOT been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that INVALID transfer between two savings accounts is NOT saved in DB-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the savings account creation page-->
+<!--  #Create two new accounts-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Transfer page-->
+<!--  #Make a transfer with an invalid amount from account1 to account2-->
+<!--  #Go to DB and check if a transfer has NOT been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--  #Test -> that INVALID transfer between two accounts is NOT saved in DB (from checking to savings and vice versa)-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the savings account creation page-->
+<!--  #Create two new accounts (one checking and one saving)-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Go to the Transfer page-->
+<!--  #Make a transfer with an invalid amount from account1 to account2-->
+<!--  #Go to DB and check if a transfer has NOT been saved (SELECT current_balance FROM account WHERE id = ‘123456789’;)-->
+
+<!--                #Non-functional testing-->
+
+<!--  #Test ->  that the account balance is retrieved correctly from DB-->
+
+<!--  #Log in as a user-->
+<!--  #Go to the checking account creation page-->
+<!--  #Create two new accounts-->
+<!--  #Go to DB and check if a new account has been created (SELECT * FROM account WHERE id = ‘123456789’; (list all accounts of user can be done through owner_id column)-->
+<!--  #Update the balance of an account from DB (INSERT INTO users (name, email) VALUES (‘John Doe’, ‘johndoe@example.com’))-->
+<!--  #Go to the View account page and check if the new value is displayed for the balance-->
+
+<!--                #User #Create-->
+
+<!--  #Test -> that a new user can be created with valid information (all fields)-->
+
+<!--  #Go to the Registration page-->
+<!--  #Register a new user with valid info for all fields-->
+<!--  #Click on the Register button-->
+<!--  #Go to DB and check if a new user has been created (SELECT * FROM user_profile WHERE email/name/surname = ‘valid_data’;)-->
+
+<!--  #Test -> that a new user can be created with valid information (only required fields)-->
+
+<!--  #Go to the Registration page-->
+<!--  #Register a new user with valid info for all required fields-->
+<!--  #Click on the Register button-->
+<!--  #Go to DB and check if a new user has been created (SELECT * FROM user_profile WHERE email/name/surname = ‘valid_data’;)-->
+
+<!--  #Test -> that account cannot be created with missing or invalid information (missing account name, missing account type and etc)-->
+
+<!--  #Go to the Registration page-->
+<!--  #Register a new user with invalid info (missing email, phone number, surname)-->
+<!--  #Click on the Register button-->
+<!--  #Validate that the error message is displayed-->
+<!--  #Go to DB and check if a new user has been created (SELECT * FROM user_profile WHERE email/name/surname = ‘valid_data’;)-->
+
+<!--                  #Hooks-->
+<!--  #Delete the account after each test where a new account is created. The goal is to have independent tests. Query:-->
+<!--  #DELETE FROM account WHERE id=3584 LIMIT 1;-->
+
+<!--  #Delete the user after each test where a new user is created. The goal is to have independent tests. Query:-->
+<!--  #DELETE FROM user_profile where id/email_address = ‘valid_data’ LIMIT 1;-->
+
+<!--  #IMPORTANT: Deletion from autotests and manually is ONLY ALLOWED with LIMIT 1 to make sure only one record gets deleted at a time.-->

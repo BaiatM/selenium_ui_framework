@@ -20,6 +20,8 @@ public class DatabaseUtils {
             //  static String password="GulnurTestSQL1&";
             Class.forName("com.mysql.cj.jdbc.Driver"); //system.setProperty same as that --registering driver
             con = DriverManager.getConnection(url, username, password); //establishes connection to the database --getting the connection
+            statement = con.createStatement(); //create a statement reference variable from statement interface
+            // A connection (session) with a specific database. SQL statements are executed and results are returned within the context of a connection
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -28,8 +30,6 @@ public class DatabaseUtils {
     public static ResultSet executeQuery(String query) {
         ResultSet resultSet = null; // need to figure out y we need it
         try {
-            // A connection (session) with a specific database. SQL statements are executed and results are returned within the context of a connection
-            statement = con.createStatement(); //create a statement reference variable from statement interface
             resultSet = statement.executeQuery(query);
             // ResultSet rs= statement.executeQuery("SELECT * FROM bootcamp.employees limit 8;"); //ResultSet is an interface
             // The ResultSet interface provides getter methods (getBoolean, getLong, and so on) for retrieving column values from the current row.
@@ -40,6 +40,15 @@ public class DatabaseUtils {
         }
         return resultSet;
     }
+
+    public static void deleteQuery(String query){
+        try {
+            statement.execute(query);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 
     public static void closeDataBaseConnection(){
         try{

@@ -74,6 +74,12 @@ public class CreateNewCheckingAccountPage extends BasePage{
         accountNameBar.sendKeys("Practice05");
         initialDepositBar.sendKeys("200");
     }
+    public void userProvidesValidInformation(String name){
+        standardCheckingRadio.click();
+        individualRadio.click();
+        accountNameBar.sendKeys(name);
+        initialDepositBar.sendKeys("200");
+    }
 
     public void clickSubmitBtn(){
         submitBtn.click();
