@@ -3,7 +3,7 @@ Feature: Transfer funds feature
     Given user enters valid "valid.username" and "valid.password"
     When user clicks on sign in button
     Then verify user is successfully logged in to the account
-  @wip
+  @DB
   Scenario: User is able to verify transfer amount
     Given user clicks on Transfer Between Accounts option
     And user is redirected to Internal Transfer page

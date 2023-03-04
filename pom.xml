@@ -70,6 +70,14 @@
             <version>8.0.28</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports  #ExtentReports i need to learn-->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.0.9</version>
+        </dependency>
+
+
 
 
     </dependencies>

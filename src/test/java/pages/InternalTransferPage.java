@@ -70,12 +70,9 @@ public class InternalTransferPage extends BasePage{
         try {
             ResultSet rs = DatabaseUtils.executeQuery("SELECT * FROM account_transaction ORDER BY transaction_date desc limit 1;");
             while(rs.next()){
-                data =rs.getString(2);
+                data =rs.getString(2); //
                 System.out.println(rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4));
             }
-//            String actual = rs.getString(2);
-//            String expected = "13.85";
-//            Assert.assertEquals(msg,expected,actual);
         } catch (Exception e) {
             e.printStackTrace();
         }

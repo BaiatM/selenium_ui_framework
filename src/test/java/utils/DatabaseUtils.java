@@ -59,15 +59,17 @@ public class DatabaseUtils {
         }
     }
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException { //Practice
         ConfigReader.initializeProperties();
 
         DatabaseUtils.initializeDBProperties();
         //ResultSet rs = DatabaseUtils.executeQuery("SELECT CURDATE();"); // to check current date sql code
-        ResultSet rs = DatabaseUtils.executeQuery("SELECT * FROM account_transaction ORDER BY transaction_date desc limit 10;");
+        ResultSet rs = DatabaseUtils.executeQuery("SELECT * FROM digitalbank.account where name = 'JavaLinks';");
         while(rs.next()){
             //System.out.println(rs.getDate(1));
-            System.out.println(rs.getString(2)+"  "+rs.getString(3)+"  "+rs.getString(4));
+            if(rs.getString(6).equals("javalinks")){
+                System.out.println(rs.getString(2)+"  "+rs.getString(4)+"  "+rs.getString(6));
+            }
         }
         DatabaseUtils.closeDataBaseConnection();
     }

@@ -65,7 +65,6 @@ public class TransferBetweenAccountsSteps {
     @Then("verify transaction details are updated in actual database")
     public void verifyTransactionDetailsAreUpdatedInActualDatabase() {
        internalTransferPage.userVerifiesTransferAmountWithActualDatabaseSQLPractice();
-
     }
 
     @And("user enters transfer amount")

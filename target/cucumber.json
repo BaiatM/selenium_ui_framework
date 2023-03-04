@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 526432000,
+              "duration": 564773000,
               "status": "passed"
             },
             "line": 4,
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 6842845000,
+              "duration": 6119474000,
               "status": "passed"
             },
             "line": 5,
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 1078874000,
+              "duration": 1107738000,
               "status": "passed"
             },
             "line": 6,
@@ -58,11 +58,11 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-03T03:28:35.063Z",
+        "start_timestamp": "2023-03-03T18:48:12.797Z",
         "before": [
           {
             "result": {
-              "duration": 10378527000,
+              "duration": 9296171000,
               "status": "passed"
             },
             "match": {
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 525243000,
+              "duration": 522984000,
               "status": "passed"
             },
             "match": {
@@ -86,7 +86,7 @@
         "after": [
           {
             "result": {
-              "duration": 1301000,
+              "duration": 2094000,
               "status": "passed"
             },
             "match": {
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 3622330000,
+              "duration": 3620222000,
               "status": "passed"
             },
             "match": {
@@ -108,7 +108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1217707000,
+              "duration": 1192320000,
               "status": "passed"
             },
             "line": 10,
@@ -120,7 +120,7 @@
           },
           {
             "result": {
-              "duration": 323210000,
+              "duration": 253961000,
               "status": "passed"
             },
             "line": 11,
@@ -132,7 +132,7 @@
           },
           {
             "result": {
-              "duration": 2267694000,
+              "duration": 2137195000,
               "status": "passed"
             },
             "line": 12,
@@ -144,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 316907000,
+              "duration": 312567000,
               "status": "passed"
             },
             "line": 13,
@@ -156,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 570750000,
+              "duration": 554781000,
               "status": "passed"
             },
             "line": 14,
@@ -174,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 1469576000,
+              "duration": 1588681000,
               "status": "passed"
             },
             "line": 15,
@@ -186,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 86835000,
+              "duration": 72736000,
               "status": "passed"
             },
             "line": 16,
@@ -204,7 +204,7 @@
           },
           {
             "result": {
-              "duration": 201260000,
+              "duration": 110698000,
               "status": "passed"
             },
             "line": 17,
@@ -233,6 +233,224 @@
     "id": "validation-of-a-new-checking-account",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/DatabaseValidation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "User is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 526204000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user enters valid \"valid.username\" and \"valid.password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"valid.username\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"valid.password\"",
+                  "offset": 39
+                }
+              ],
+              "location": "step_definitions.LoginSteps.user_enters_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5224575000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user clicks on sign in button",
+            "match": {
+              "location": "step_definitions.LoginSteps.user_clicks_on_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1362533000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "verify user is successfully logged in to the account",
+            "match": {
+              "location": "step_definitions.LoginSteps.verify_user_is_successfully_logged_in_to_the_account()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-03T18:48:40.308Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7322514000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 393358000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setUpDB()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User is able to verify transfer amount",
+        "description": "",
+        "id": "transfer-funds-feature;user-is-able-to-verify-transfer-amount",
+        "after": [
+          {
+            "result": {
+              "duration": 1171000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.cleanUpDB()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3616367000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2785288000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Transfer Between Accounts option",
+            "match": {
+              "location": "step_definitions.TransferBetweenAccountsSteps.userClicksOnTransferBetweenAccountsOption()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154277000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is redirected to Internal Transfer page",
+            "match": {
+              "location": "step_definitions.TransferBetweenAccountsSteps.userIsRedirectedToInternalTransferPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2147846000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user selects from account and to account in internal page",
+            "match": {
+              "location": "step_definitions.TransferBetweenAccountsSteps.userSelectsFromAccountInInternalPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233816000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user enters transfer amount",
+            "match": {
+              "location": "step_definitions.TransferBetweenAccountsSteps.userEntersTransferAmount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3358351000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on submit button on Internal Transfer page",
+            "match": {
+              "location": "step_definitions.TransferBetweenAccountsSteps.userClicksOnSubmitButtonOnInternalTransferPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23660000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is redirected to view checking accounts",
+            "match": {
+              "location": "step_definitions.WithdrawSteps.userIsRedirectedToViewCheckingAccounts()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 218069000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user scrolls down until the transaction table is visible",
+            "match": {
+              "location": "step_definitions.SavingAccountSteps.userScrollsDownUntilTheTransactionTableIsVisible()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69722000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "verify transaction details are updated in actual database",
+            "match": {
+              "location": "step_definitions.TransferBetweenAccountsSteps.verifyTransactionDetailsAreUpdatedInActualDatabase()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@DB"
+          }
+        ]
+      }
+    ],
+    "name": "Transfer funds feature",
+    "description": "",
+    "id": "transfer-funds-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TransferFundsSQLPractice.feature",
     "tags": []
   }
 ]
