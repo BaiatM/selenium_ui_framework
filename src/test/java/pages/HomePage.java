@@ -8,6 +8,8 @@ import org.openqa.selenium.remote.Command;
 import org.openqa.selenium.support.FindBy;
 import utils.DriverUtils;
 
+import java.util.logging.Logger;
+
 public class HomePage extends BasePage{
     @FindBy (xpath = "//li[@class='active']")
     WebElement welcomeText;
@@ -40,8 +42,10 @@ public class HomePage extends BasePage{
 
 
     Actions actions = new Actions(DriverUtils.getDriver());
+    Logger log = Logger.getLogger("ViewCheckingAccountsPage");
 
     public void verifyPage(){
+        log.info("hello");
         Assert.assertTrue("Welcome test message is not visible, could be on wrong page", welcomeText.isDisplayed());
     }
 

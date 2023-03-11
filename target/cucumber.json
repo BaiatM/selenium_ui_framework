@@ -11,8 +11,8 @@
         "steps": [
           {
             "result": {
-              "duration": 564773000,
-              "status": "passed"
+              "duration": 458000,
+              "status": "skipped"
             },
             "line": 4,
             "name": "user enters valid \"valid.username\" and \"valid.password\"",
@@ -33,8 +33,8 @@
           },
           {
             "result": {
-              "duration": 6119474000,
-              "status": "passed"
+              "duration": 59000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "user clicks on sign in button",
@@ -45,8 +45,8 @@
           },
           {
             "result": {
-              "duration": 1107738000,
-              "status": "passed"
+              "duration": 38000,
+              "status": "skipped"
             },
             "line": 6,
             "name": "verify user is successfully logged in to the account",
@@ -58,12 +58,13 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-03T18:48:12.797Z",
+        "start_timestamp": "2023-03-10T18:28:29.844Z",
         "before": [
           {
             "result": {
-              "duration": 9296171000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63923/devtools/browser/8c561a4d-2fa3-43a3-8f0f-fc450a948b93\nBuild info: version: \u00274.5.0\u0027, revision: \u0027fe167b119a\u0027\nSystem info: os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002713.0.1\u0027, java.version: \u002717.0.3\u0027\nDriver info: driver.version: ChromeDriver\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:102)\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\n\tat org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)\n\tat java.base/java.util.Optional.map(Optional.java:260)\n\tat org.openqa.selenium.chromium.ChromiumDriver.\u003cinit\u003e(ChromiumDriver.java:114)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:81)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:49)\n\tat utils.DriverUtils.createDriver(DriverUtils.java:39)\n\tat step_definitions.Hooks.setUp(Hooks.java:17)\n",
+              "duration": 7267551000,
+              "status": "failed"
             },
             "match": {
               "location": "step_definitions.Hooks.setUp(io.cucumber.java.Scenario)"
@@ -71,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 522984000,
+              "duration": 536812000,
               "status": "passed"
             },
             "match": {
@@ -86,7 +87,7 @@
         "after": [
           {
             "result": {
-              "duration": 2094000,
+              "duration": 1278000,
               "status": "passed"
             },
             "match": {
@@ -95,8 +96,9 @@
           },
           {
             "result": {
-              "duration": 3620222000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"takesScreenshot\" is null\n\tat utils.CommonMethods.takeScreenshot(CommonMethods.java:16)\n\tat step_definitions.Hooks.cleanUp(Hooks.java:32)\n",
+              "duration": 3521505000,
+              "status": "failed"
             },
             "match": {
               "location": "step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)"
@@ -108,8 +110,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1192320000,
-              "status": "passed"
+              "duration": 270000,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user is clicking on Checking dropdown and seeing following options: View Checking, New Checking",
@@ -120,8 +122,8 @@
           },
           {
             "result": {
-              "duration": 253961000,
-              "status": "passed"
+              "duration": 107000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user is opening new tab by clicking on New Checking option",
@@ -132,8 +134,8 @@
           },
           {
             "result": {
-              "duration": 2137195000,
-              "status": "passed"
+              "duration": 1240000,
+              "status": "skipped"
             },
             "line": 12,
             "name": "user is changing to new checking tab",
@@ -144,8 +146,8 @@
           },
           {
             "result": {
-              "duration": 312567000,
-              "status": "passed"
+              "duration": 60000,
+              "status": "skipped"
             },
             "line": 13,
             "name": "user is able to see all related labels",
@@ -156,8 +158,8 @@
           },
           {
             "result": {
-              "duration": 554781000,
-              "status": "passed"
+              "duration": 58000,
+              "status": "skipped"
             },
             "line": 14,
             "name": "user fills the information for new checking account with the name \"MYQSLPractice0215\"",
@@ -174,8 +176,8 @@
           },
           {
             "result": {
-              "duration": 1588681000,
-              "status": "passed"
+              "duration": 28000,
+              "status": "skipped"
             },
             "line": 15,
             "name": "user clicks on submit button",
@@ -186,8 +188,8 @@
           },
           {
             "result": {
-              "duration": 72736000,
-              "status": "passed"
+              "duration": 29000,
+              "status": "skipped"
             },
             "line": 16,
             "name": "verify user created new account in the database with the \"MYQSLPractice0215\"",
@@ -204,8 +206,8 @@
           },
           {
             "result": {
-              "duration": 110698000,
-              "status": "passed"
+              "duration": 28000,
+              "status": "skipped"
             },
             "line": 17,
             "name": "clean up the database \"MYQSLPractice0215\"",
@@ -247,8 +249,8 @@
         "steps": [
           {
             "result": {
-              "duration": 526204000,
-              "status": "passed"
+              "duration": 1912000,
+              "status": "skipped"
             },
             "line": 3,
             "name": "user enters valid \"valid.username\" and \"valid.password\"",
@@ -269,8 +271,8 @@
           },
           {
             "result": {
-              "duration": 5224575000,
-              "status": "passed"
+              "duration": 317000,
+              "status": "skipped"
             },
             "line": 4,
             "name": "user clicks on sign in button",
@@ -281,8 +283,8 @@
           },
           {
             "result": {
-              "duration": 1362533000,
-              "status": "passed"
+              "duration": 96000,
+              "status": "skipped"
             },
             "line": 5,
             "name": "verify user is successfully logged in to the account",
@@ -294,12 +296,13 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-03T18:48:40.308Z",
+        "start_timestamp": "2023-03-10T18:28:41.253Z",
         "before": [
           {
             "result": {
-              "duration": 7322514000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63977/devtools/browser/ed76a269-5b88-4990-8d61-007d85610dd9\nBuild info: version: \u00274.5.0\u0027, revision: \u0027fe167b119a\u0027\nSystem info: os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002713.0.1\u0027, java.version: \u002717.0.3\u0027\nDriver info: driver.version: ChromeDriver\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.\u003cinit\u003e(NettyWebSocket.java:102)\n\tat org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)\n\tat org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)\n\tat org.openqa.selenium.devtools.Connection.\u003cinit\u003e(Connection.java:77)\n\tat org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)\n\tat java.base/java.util.Optional.map(Optional.java:260)\n\tat org.openqa.selenium.chromium.ChromiumDriver.\u003cinit\u003e(ChromiumDriver.java:114)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:81)\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:49)\n\tat utils.DriverUtils.createDriver(DriverUtils.java:39)\n\tat step_definitions.Hooks.setUp(Hooks.java:17)\n",
+              "duration": 6073163000,
+              "status": "failed"
             },
             "match": {
               "location": "step_definitions.Hooks.setUp(io.cucumber.java.Scenario)"
@@ -307,7 +310,7 @@
           },
           {
             "result": {
-              "duration": 393358000,
+              "duration": 406118000,
               "status": "passed"
             },
             "match": {
@@ -322,7 +325,7 @@
         "after": [
           {
             "result": {
-              "duration": 1171000,
+              "duration": 1333000,
               "status": "passed"
             },
             "match": {
@@ -331,8 +334,9 @@
           },
           {
             "result": {
-              "duration": 3616367000,
-              "status": "passed"
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"takesScreenshot\" is null\n\tat utils.CommonMethods.takeScreenshot(CommonMethods.java:16)\n\tat step_definitions.Hooks.cleanUp(Hooks.java:32)\n",
+              "duration": 3507158000,
+              "status": "failed"
             },
             "match": {
               "location": "step_definitions.Hooks.cleanUp(io.cucumber.java.Scenario)"
@@ -344,8 +348,8 @@
         "steps": [
           {
             "result": {
-              "duration": 2785288000,
-              "status": "passed"
+              "duration": 91000,
+              "status": "skipped"
             },
             "line": 8,
             "name": "user clicks on Transfer Between Accounts option",
@@ -356,8 +360,8 @@
           },
           {
             "result": {
-              "duration": 154277000,
-              "status": "passed"
+              "duration": 57000,
+              "status": "skipped"
             },
             "line": 9,
             "name": "user is redirected to Internal Transfer page",
@@ -368,8 +372,8 @@
           },
           {
             "result": {
-              "duration": 2147846000,
-              "status": "passed"
+              "duration": 59000,
+              "status": "skipped"
             },
             "line": 10,
             "name": "user selects from account and to account in internal page",
@@ -380,8 +384,8 @@
           },
           {
             "result": {
-              "duration": 233816000,
-              "status": "passed"
+              "duration": 34000,
+              "status": "skipped"
             },
             "line": 11,
             "name": "user enters transfer amount",
@@ -392,8 +396,8 @@
           },
           {
             "result": {
-              "duration": 3358351000,
-              "status": "passed"
+              "duration": 23000,
+              "status": "skipped"
             },
             "line": 12,
             "name": "user clicks on submit button on Internal Transfer page",
@@ -404,8 +408,8 @@
           },
           {
             "result": {
-              "duration": 23660000,
-              "status": "passed"
+              "duration": 22000,
+              "status": "skipped"
             },
             "line": 13,
             "name": "user is redirected to view checking accounts",
@@ -416,8 +420,8 @@
           },
           {
             "result": {
-              "duration": 218069000,
-              "status": "passed"
+              "duration": 80000,
+              "status": "skipped"
             },
             "line": 14,
             "name": "user scrolls down until the transaction table is visible",
@@ -428,8 +432,8 @@
           },
           {
             "result": {
-              "duration": 69722000,
-              "status": "passed"
+              "duration": 24000,
+              "status": "skipped"
             },
             "line": 15,
             "name": "verify transaction details are updated in actual database",

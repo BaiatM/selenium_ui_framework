@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -36,7 +37,11 @@ public class DriverUtils {
                     //WebDriverManager essentially removes the need to manually manage any drivers. We can use it both "download"
                     //and manage the drivers.
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--remote-allow-origins=*");
+
+                    driver = new ChromeDriver(options);
             }
             //else if the value of app.host is saucelabs we are setting up a RemoteDriver to run tests on saucelabs
         }else if(ConfigReader.getProperty("app.host").equalsIgnoreCase("saucelabs")){

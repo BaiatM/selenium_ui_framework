@@ -56,8 +56,8 @@ public class InternalTransferPage extends BasePage{
     }
 
     public void userChoosesFromAccountAndToAccountSQLPractice(){
-        new Select(fromAccountDropDown).selectByValue("1140");
-        new Select(toAccountDropDown).selectByValue("1146");
+        new Select(fromAccountDropDown).selectByValue("1146");
+        new Select(toAccountDropDown).selectByValue("1140");
     }
 
     public void userEntersTransferAmountSQLPractice(){
@@ -76,6 +76,6 @@ public class InternalTransferPage extends BasePage{
         } catch (Exception e) {
             e.printStackTrace();
         }
-        Assert.assertTrue(msg,data.contains("13.85"));
+        Assert.assertTrue(msg,data.contains("15.85"));
     }
 }

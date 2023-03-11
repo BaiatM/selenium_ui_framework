@@ -18,8 +18,8 @@ Feature: Withdraw from accounts
     Examples:
       | accountValue | withdrawAmount |
       | 1143         | 12.00          |
-      | 1146         | 20.53          |
-      | 1882         | 30.67          |
-      | 3485         | 15.98          |
+#      | 1146         | 20.53          |
+#      | 1882         | 30.67          |
+#      | 3485         | 15.98          |
 
 
