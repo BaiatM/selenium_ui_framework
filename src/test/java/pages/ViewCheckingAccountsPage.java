@@ -57,10 +57,10 @@ public class ViewCheckingAccountsPage extends BasePage{
 
     public void userVerifiesTransferAmountInTransactionTable(String transferAmount){
         String msg = "Transfer amount on table is not matching with actual transfer amount";
-        String expected =withdrawAmountOnTable.getText();
+        String expected = withdrawAmountOnTable.getText();
         String actual = "$"+transferAmount;
         Assert.assertEquals(msg,expected,actual);
-        log.info("Transfer amount: "+withdrawAmountOnTable.getText());
+        log.info("Transfer amount: "+ withdrawAmountOnTable.getText());
     }
 
 }
