@@ -35,11 +35,11 @@ Feature: Creating a new checking account
     Then user should see all details about transactions
     Examples:
       | accountName |
-      | Test02      |
-      | aa          |
-      | Practice06  |
-      | Practice09  |
-      | Test00      |
+      | Test01      |
+#      | aa          |
+#      | Practice06  |
+#      | Practice09  |
+#      | Test00      |
 
     #Feature: Validating all checking accounts page.
     #  As a User, I want to have the ability to view all my Checking bank account

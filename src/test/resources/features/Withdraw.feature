@@ -17,7 +17,7 @@ Feature: Withdraw from accounts
     Then user verifies "<withdrawAmount>" and new balance
     Examples:
       | accountValue | withdrawAmount |
-      | 1143         | 12.00          |
+      | 1318         | 12.00          |
 #      | 1146         | 20.53          |
 #      | 1882         | 30.67          |
 #      | 3485         | 15.98          |

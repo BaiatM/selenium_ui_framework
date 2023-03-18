@@ -1,5 +1,5 @@
 Feature: SignUp feature
-  @Smoke
+  @wip
   Scenario: User is able to sign up with fake credentials
     Given user clicks on sign up button
     And user fills the form

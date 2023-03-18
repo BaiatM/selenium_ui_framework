@@ -8,7 +8,6 @@ import utils.ConfigReader;
 import utils.DatabaseUtils;
 import utils.DriverUtils;
 
-import javax.xml.crypto.Data;
 
 public class Hooks {
     @Before

@@ -28,7 +28,7 @@ public class DatabaseUtils {
     }
 
     public static ResultSet executeQuery(String query) {
-        ResultSet resultSet = null; // need to figure out y we need it
+        //ResultSet resultSet = null; // need to figure out y we need it
         try {
             resultSet = statement.executeQuery(query);
             // ResultSet rs= statement.executeQuery("SELECT * FROM bootcamp.employees limit 8;"); //ResultSet is an interface

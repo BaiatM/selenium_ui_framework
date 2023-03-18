@@ -10,6 +10,6 @@ Feature: Deposit feature functionalities
     And user is redirected to Deposit page
     When user chooses "deposit.to" account
     And user enters "deposit.amount" and clicks on submit button
-    And user is redirected to view savings account page
+    And user is redirected to view checking accounts
     And user scrolls down until the transaction table is visible
     Then user should see "deposit.amount" in transactions table

@@ -36,7 +36,7 @@ public class CreateNewCheckingAccountPage extends BasePage{
     WebElement initialDepositBar;
     @FindBy (css = "#newCheckingSubmit")
     WebElement submitBtn;
-    @FindBy (xpath = "//*[text()='Successfully created new Standard Checking account named Practice05']")
+    @FindBy (xpath = "//*[text()='Successfully created new Standard Checking account named Practice10']")
     WebElement confirmationMsg;
     @FindBy (css = "#newCheckingReset")
     WebElement resetBtn;
@@ -71,8 +71,8 @@ public class CreateNewCheckingAccountPage extends BasePage{
     public void userProvidesValidInformation(){
         standardCheckingRadio.click();
         individualRadio.click();
-        accountNameBar.sendKeys("Practice05");
-        initialDepositBar.sendKeys("200");
+        accountNameBar.sendKeys("Practice10");
+        initialDepositBar.sendKeys("201230");
     }
 
     public void userProvidesValidInformation(String name){
